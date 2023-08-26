@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive 3D Parallax Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+  <style>
+  
+    #splash-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #050505;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    
+    #splash-screen img {
+      width: 500px; 
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="splash-screen">
+    <img src="./png/logo-no-background.png" alt="Splash Screen" class ="logo1" />
+  </div>
+
+  <main >
+    <div class="vignette hide"></div>
+    <img src="img/background.png" data-speedx="0.3" data-speedy="0.38" data-speedz="0" data-rotation="0" data-distance="-200" class="Parallax bg-img">
+    <img src="img/fog_7.png" data-speedx="0.27" data-speedy="0.32" data-speedz="0" data-rotation="0" data-distance="850"  class="Parallax fog-7">
+    <img src="img/mountain_10.png" data-speedx="0.125" data-speedy="0.155"  data-speedz="0"  data-rotation="0"  data-distance="1100" class="Parallax mountain-10">
+    <img src="img/mountain_add.png" data-speedx="0.125" data-speedy="0.155"  data-speedz="0"  data-rotation="0" data-distance="1100"  class="Parallax mountain-add">
+    <img src="img/fog_6.png" data-speedx="0.11" data-speedy="0.28"  data-speedz="0" data-rotation="0"   data-distance="1400" class="Parallax fog-6">
+    <img src="img/mountain_9.png" data-speedx="0.125" data-speedy="0.155"  data-speedz="0.15"  data-rotation="0.02"  data-distance="1700" class="Parallax mountain-9">
+    <img src="img/mountain_add2.png" data-speedx="0.1" data-speedy="0.11"  data-speedz="0.15"  data-rotation="0.02" data-distance="1500"  class="Parallax mountain-add2">
+    <img src="img/mountain_8.png" data-speedx="0.1" data-speedy="0.11" data-speedz="0"   data-rotation="0.02" data-distance="1800"  class="Parallax mountain-8">
+    <img src="img/fog_5.png" data-speedx="0.16"data-speedy="0.105"  data-speedz="0"   data-rotation="0" data-distance="1900"  class="Parallax fog-5">
+    <img src="img/mountain_7.png" data-speedx="0.1" data-speedy="0.1"  data-speedz="0"  data-rotation="0.09"   data-distance="2000" class="Parallax mountain-7">
+    <div class="text Parallax" data-speedx="0.07" data-speedy="0.07" data-speedz="0.07" data-rotation="0.11"   id = "shaktiman">
+      <h2>WELCOME TO</h2>
+      <h1>JS CODER PORTFOLIO</h1>
+      
+    </div>
+    <div id="buttonContainer" class="wrap Parallax" data-speedx="0.07" data-speedy="0.07" data-speedz="0.07" data-rotation="0.11">
+      <a href="./3D-NAVBAR-ANIMATION-master/index.html">
+      <button id="myButton" class="button hidden">LET'S GO</button>
+    </a>
+    </div>
+    <img src="img/mountain_6.png" data-speedx="0.065" data-speedy="0.05"  data-speedz="0.5" data-rotation="0.12"   data-distance="2300" class="Parallax mountain-6">
+    <img src="img/fog_4.png" data-speedx="0.135" data-speedy="0.12" data-speedz="0" data-rotation="0"    data-distance="2400" class="Parallax fog-4">
+    <img src="img/mountain_5.png" data-speedx="0.058" data-speedy="0.021" data-speedz="0.13"  data-rotation="0.13"  data-distance="2500" class="Parallax mountain-5">
+    <img src="img/fog_3.png" data-speedx="0.11" data-speedy="0.018"  data-speedz="0"  data-rotation="0"  data-distance="2800" class="Parallax fog-3">
+    <img src="img/mountain_4.png"  data-speedx="0.059" data-speedy="0.024" data-speedz="0.35"   data-rotation="0.35"  data-distance="3200" class="Parallax mountain-4">
+    <img src="img/mountain_3.png" data-speedx="0.04" data-speedy="0.018" data-speedz="0.32" data-rotation="0.05"  data-distance="3400"  class="Parallax mountain-3">
+    <img src="img/fog_2.png" data-speedx="0.15" data-speedy="0.0115"  data-speedz="0"  data-rotation="0"  data-distance="3600" class="Parallax fog-2">
+    <img src="img/mountain_2.png" data-speedx="0.0235" data-speedy="0.013" data-speedz="0.42"  data-rotation="0.15"   data-distance="3800" class="Parallax mountain-2">
+    <img src="img/mountain_1.png" data-speedx="0.027" data-speedy="0.018"  data-speedz="0.53" data-rotation="0.2"  data-distance="4000"  class="Parallax mountain-1">
+    <img src ="img/sun_rays.png"  class="sun-rays hide">
+    <img src="img/black_shadow.png" class="black-shadow hide">
+    <img src="img/fog_1.png" data-speedx="0.1" data-speedy="0.01" data-speedz="0"  data-rotation="0"   data-distance="4200" class="Parallax fog-1">
+   
+  </main>
+
+  
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="js/gsap.min.js"></script>
+  <script src="js/app.js" defer></script>
+</body>
+
+</html>
